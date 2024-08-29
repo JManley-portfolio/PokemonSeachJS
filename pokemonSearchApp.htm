@@ -1,0 +1,58 @@
+
+<!DOCTYPE HTML>
+<html lang='en'>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Search App</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Pokémon Search App</h1>
+    <div id="input-container">
+        <label for="search-input">Search for Pokémon Name or ID:</label>
+        <input type="text" id="search-input" required>
+        <button type="button" id="search-button">Search</button>
+    </div>
+    <div id="content-wrapper">
+    <div id="previous-evo-container" class="evo-container"></div>
+    <div class="main-container">
+      <div id="results-container">
+          <h2 id="pokemon-name"></h2><h2 id="pokemon-id"></h2>
+          <p id="weight">Weight:  </p><p id="height">Height:  </p>
+          <div id="pokemon-image"></div>
+          <span id="types"></span>
+      </div>
+      <div id="stats-container">
+          <table id="stats-table">
+              <tr id="header-row">
+                  <th class="table-header">Base</th><th class="table-header">Stats</th>
+              </tr>
+              <tr class="stats-row">
+                  <td>HP:</td><td id="hp"></td>
+              </tr>
+              <tr class="stats-row">
+                  <td>Attack:</td><td id="attack"></td>
+              </tr>
+              <tr class="stats-row">
+                  <td>Defense:</td><td id="defense"></td>
+              </tr>
+              <tr class="stats-row">
+                  <td>Sp. Attack:</td><td id="special-attack"></td>
+              </tr>
+              <tr class="stats-row">
+                  <td>SP. Defense:</td><td id="special-defense"></td>
+              </tr>
+              <tr class="stats-row">
+                  <td>Speed:</td><td id="speed"></td>
+              </tr>
+          </table>
+      </div>
+        <div id="link-container"></div>
+    </div>
+    <div id="next-evo-container" class="evo-container"></div>
+    </div>
+  <script src="script.js"></script>
+  </body>
+</html>
+
